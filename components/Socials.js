@@ -18,7 +18,7 @@ const Socials = () => {
       className="hover:text-accent transition-all duration-300">
         <RiLinkedinLine/>
       </Link><Link 
-      href={''}
+      href='mailto:anamgulzar67@gmail.com'
       className="hover:text-accent transition-all duration-300">
         <RiMailAddLine/>
       </Link><Link 

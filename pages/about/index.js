@@ -6,16 +6,17 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaNodeJs,
+  FaPython,
+  FaBootstrap,
+  FaGithub,
+  FaQuran,
+  FaLaptop,
+  FaCamera,
+  
 } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { SiNextdotjs, SiFramer } from "react-icons/si";
 
 //   aboutdata
 const aboutData = [
@@ -25,19 +26,43 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5  key={"FaHtml5"}/>,
+          <FaCss3  key={"FaCss3"}/>,
+          <FaJs key={"FaJs"} />,
+          <FaReact key={"FaReact"}/>,
+          <SiNextdotjs key={"SiNextdotjs"}/>,
+          <SiFramer key={"SiFramer"} />,
+          <FaNodeJs  key={"FaNodeJs"}/>,
+          <FaPython  key={"FaPython"}/>,
+          <FaBootstrap  key={"FaBootstrap"}/>,
+          <FaGithub  key={"FaGithub"}/>,
         ],
+        
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Hafiz-e-Quran",
+        icons:[
+          <FaQuran key={"FaQuran"}/>
+        ]
+      },{
+        title: "Typing speed 30 wpm",
+        icons:[
+          <FaQuran key={"FaQuran"}/>
+        ]
+      },{
+        title: "Ability to use Inpage.",
+        icons:[
+          <FaLaptop key={"FaLaptop"}/>
+        ]
+      },{
+        title: "Art desinings",
+        icons:[
+          <FaCamera key={"FaCamera"}/>
+        ]
+      },{
+        title: "Ability to communicate/deal with people.",
       },
+
     ],
   },
   {
@@ -113,13 +138,49 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <dev className="container mx-auto h-full flex flex-col items-center xl:flex-row ">
-        <div>text</div>
-        <div>
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
+        {/* texxt */}
+        <div className=" flex-1 flex flex-col justify-center mt-48 lg:mt-2">
+          <motion.h2
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
+            Academic <span className="text-accent ">Information</span>
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto md:mb-0 xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            modi, voluptatem voluptas iusto nam quaerat quasi perfe orem ipsum
+            dolor sit amet consectetur adipisicing elit. Laborum modi,
+            voluptatem voluptas iusto nam quaerat quasi perfe
+          </motion.p>
+        </div>
+        {/* info */}
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+         className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          <div
+            className="flex mt-10 md:mt-10 lg:mt-36 gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4"
+          >
             {aboutData.map((item, itemIndex) => {
               return (
-                <div
+                <motion.div
+                variants={fadeIn("left", 0.4)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
@@ -128,22 +189,42 @@ const About = () => {
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
-                </div>
+                </motion.div>
               );
             })}
           </div>
-          <div>
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex}>
+                <motion.div
+                  variants={fadeIn("left", 0.4)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/50"
+                >
                   {/* {title } */}
-                  <div>{item.title}</div>
-                </div>
+                  <motion.div
+                   variants={fadeIn("left", 0.4)}
+                   initial="hidden"
+                   animate="show"
+                   exit="hidden"
+                  className="font-light mb-2 md:mb-0">{item.title}</motion.div>
+                  <div className="hidden md:flex ">--</div>
+                  <div>{item.stage}</div>
+                  <div className="flex gap-x-4">
+                    {/* icons */}
+                    {item.icons?.map((icons, itemIndex) => {
+                      return <div key={itemIndex} className="text-2xl text-white">{icons}</div>
+                    })}
+                  </div>
+                </motion.div>
               );
             })}
           </div>
-        </div>
-      </dev>
+        </motion.div>
+      </div>
     </div>
   );
 };

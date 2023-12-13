@@ -30,20 +30,20 @@ const Transition = () => {
         >
           </motion.div>
           <motion.div
-       className='fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#3b2d71]'
-        variants={transitionVarients} 
-        initial='initial'
-        animate='animate'
-        exit ='exit' 
-        transition={{ delay: 0.2, duration: 0.6, ease: 'easeInOut' }} 
-        >
-          </motion.div><motion.div
-       className='fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#2e2257]'
+       className='fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#5c5091]'
         variants={transitionVarients} 
         initial='initial'
         animate='animate'
         exit ='exit' 
         transition={{ delay: 0.4, duration: 0.6, ease: 'easeInOut' }} 
+        >
+          </motion.div><motion.div
+       className='fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#7a69b4]'
+        variants={transitionVarients} 
+        initial='initial'
+        animate='animate'
+        exit ='exit' 
+        transition={{ delay: 0.6, duration: 0.6, ease: 'easeInOut' }} 
         >
           </motion.div>
     </>
