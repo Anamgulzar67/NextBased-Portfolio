@@ -33,11 +33,8 @@ const Home = () => {
            initial='hidden'
            animate='show'
            exit='hidden'
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-            similique, impedit earum consectetur nisi quam ad. Eius reiciendis
-            fuga et modi obcaecati quo sint! Debitis, ducimus deleniti. Officia,
-            voluptatibus quod?
+            className="max-w-sm lg:text-lg xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
+           Welcome to my web development portfolio, where innovation meets functionality, and creativity converges with code. With a passion for crafting digital experiences, I specialize in turning ideas into responsive and dynamic websites. I am dedicated to creating visually stunning and user-friendly websites that leave a lasting impression.
           </motion.p>
           {/* {btn } */}
           <div className='flex justify-center xl:hidden relative'>

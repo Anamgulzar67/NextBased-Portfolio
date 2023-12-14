@@ -18,10 +18,11 @@ const Socials = () => {
       className="hover:text-accent transition-all duration-300">
         <RiLinkedinLine/>
       </Link><Link 
-      href='mailto:anamgulzar67@gmail.com'
+      href={'mailto:anamgulzar67@gmail.com'}
       className="hover:text-accent transition-all duration-300">
         <RiMailAddLine/>
-      </Link><Link 
+      </Link>
+      <Link 
       href={'https://www.facebook.com/'}
       className="hover:text-accent transition-all duration-300">
         <RiFacebookBoxLine/>

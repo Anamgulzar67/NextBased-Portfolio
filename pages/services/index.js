@@ -29,7 +29,7 @@ const Services = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione magni dolorem inventore cumque molestias expedita soluta maxime itaqu Dolorum ratione magni dolorem inventore cumque molestias expedita soluta maxime itaqu</motion.p>
+          className="mb-4 max-w-[400px] mx-auto lg:mx-0">My main objective as software engineering is to develop methods and procedures for software development that can scale up for large systems and that can be used consistently to produce high-quality software at low cost and with a small cycle of time.</motion.p>
         </div>
 
         {/* slider */}

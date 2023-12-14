@@ -22,31 +22,26 @@ import {
 
  //service data
 const serviceData = [
+  
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxDesktop />,
+    title: 'Web Development',
+    description: 'With latest technologies like frontend and backend'
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Designing',
+    description: 'With graphics technologies like photoshop and canva',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+    title: 'Team Lead',
+    description: 'Management,time utilization,performance etc',
+  },{
+    icon: <RxReader />,
+    title: 'Instructor',
+    description: 'Teaching Assistant ',
+  }
 ];
  const ServiceSlider = () => {
   return <Swiper breakpoints={{

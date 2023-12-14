@@ -13,6 +13,8 @@ import {
   FaQuran,
   FaLaptop,
   FaCamera,
+  FaBiking
+  
   
 } from "react-icons/fa";
 
@@ -68,13 +70,25 @@ const aboutData = [
   {
     title: "awards",
     info: [
+     
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "I had participated in Federal inter-school Qirat competition and got 3rd position. -Multan-regiuon-Multan",
+        stage: "2013",
+      },{
+        title: "I had participated in debate competition and got 2nd position. -Multan-regiuon-Multan",
+        stage: "2013",
+      },{
+        title: "I had participated in art compition organized by media society and got 1st position. -Media Society ,UO",
+        stage: "2019",
+      },{
+        title: "I got prize on efficient working of writing newspaper of Media society. -Media Society ,UO",
+        stage: "2019",
+      },{
+        title: "I had participated in Inter-school debate competition and got 2nd position. -FG School,Okara Cantt",
+        stage: "2013",
+      },{
+        title: "I was an active member of (EWS) Environmental Watch Society in university of okara,Renala campus -EWS ,UO",
+        stage: "2018...2019",
       },
     ],
   },
@@ -82,16 +96,16 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "I have Experience of one semester as a teacher assistant on C++ - University of Okara",
+        stage: "2018",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "FrontEnd Developer - The Knowledge school system,UMT",
+        stage: "2021 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Web Developement - DK recruitment",
+        stage: "2023",
       },
     ],
   },
@@ -99,16 +113,50 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "BSIT- University Of Okara",
+        stage: "2017-2021",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "ICS- F.G degree college,Okara Cantt",
+        stage: "2015-2017",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Metric-F.G Public School ,Okara Cantt",
+        stage: "2013",
+      },
+    ],
+  },
+  {
+    title: "Inteterest",
+    info: [
+      {
+        title: "Coding",
+        icons:[
+          <FaLaptop key={"FaLaoptop"}/>
+        ]
+       
+      },
+      {
+        title: "Bike riding",
+        icons:[
+          <FaBiking key={"FaBiking"}/>
+        ]
+        
+      },
+      {
+        title: "Photography",
+        icons:[
+          <FaCamera key={"FaCamera"}/>
+        ]
+      },{
+        title: "Spread Positivity",
+        
+      },{
+        title: "Cooking",
+        
+      },{
+        title: "Public dealing",
+        
       },
     ],
   },
@@ -124,7 +172,6 @@ import { fadeIn } from "../../variants";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -139,9 +186,9 @@ const About = () => {
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
+      <div className="container mx-auto h-full flex flex-col md:gap-0  items-center xl:flex-row gap-x-6 ">
         {/* texxt */}
-        <div className=" flex-1 flex flex-col justify-center mt-48 lg:mt-2">
+        <div className=" flex-1 flex flex-col justify-center mt-48 lg:mt-20">
           <motion.h2
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -149,7 +196,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Academic <span className="text-accent ">Information</span>
+            Intro<span className="text-accent ">duction</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -158,10 +205,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto md:mb-0 xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            modi, voluptatem voluptas iusto nam quaerat quasi perfe orem ipsum
-            dolor sit amet consectetur adipisicing elit. Laborum modi,
-            voluptatem voluptas iusto nam quaerat quasi perfe
+           From front-end design to back-end development, my goal is to deliver seamless, intuitive, and performance-driven web solutions. Explore my projects to witness the intersection of design aesthetics and cutting-edge technology, showcasing my commitment to pushing the boundaries of web development. 
           </motion.p>
         </div>
         {/* info */}
@@ -172,55 +216,55 @@ const About = () => {
           exit="hidden"
          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div
-            className="flex mt-10 md:mt-10 lg:mt-36 gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4"
+            className="flex mt-10 md:mt-10 lg:mt-28 gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4"
           >
             {aboutData.map((item, itemIndex) => {
               return (
-                <motion.div
-                variants={fadeIn("left", 0.4)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
+                <div
+                // variants={fadeIn("left", 0.4)}
+                // initial="hidden"
+                // animate="show"
+                // exit="hidden"
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize xl:text-xl relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
-                </motion.div>
+                </div>
               );
             })}
           </div>
           <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <motion.div
-                  variants={fadeIn("left", 0.4)}
-                  initial="hidden"
-                  animate="show"
-                  exit="hidden"
+                <div
+                  // variants={fadeIn("left", 0.4)}
+                  // initial="hidden"
+                  // animate="show"
+                  // exit="hidden"
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/50"
                 >
                   {/* {title } */}
-                  <motion.div
-                   variants={fadeIn("left", 0.4)}
-                   initial="hidden"
-                   animate="show"
-                   exit="hidden"
-                  className="font-light mb-2 md:mb-0">{item.title}</motion.div>
+                  <div
+                  //  variants={fadeIn("left", 0.4)}
+                  //  initial="hidden"
+                  //  animate="show"
+                  //  exit="hidden"
+                  className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex ">--</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
-                    {item.icons?.map((icons, itemIndex) => {
-                      return <div key={itemIndex} className="text-2xl text-white">{icons}</div>
+                    {item.icons?.map((icon, itemIndex) => {
+                      return (<div key={itemIndex} className="text-2xl text-white">{icon}</div>)   
                     })}
                   </div>
-                </motion.div>
-              );
+                </div>
+              )
             })}
           </div>
         </motion.div>

@@ -29,7 +29,7 @@ const Work = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione magni dolorem inventore cumque molestias expedita soluta maxime itaqu Dolorum ratione magni dolorem inventore cumque molestias expedita soluta maxime itaqu</motion.p>
+          className="mb-4 max-w-[400px] mx-auto lg:mx-0">Loack at some small projects as showcase for my skills . I am excited to continue contributing my skills and expertise in large projects and am proud to showcase my journey in this portfolio</motion.p>
         </div>
 
         {/* slider */}
