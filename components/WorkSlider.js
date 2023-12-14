@@ -1,5 +1,5 @@
 // data
-const workSlides = {
+const workSlider = {
   slides: [
     {
       images: [
@@ -61,26 +61,25 @@ import 'swiper/css/pagination'
 
 import Image from 'next/image';
  const WorkSlider = () => {
-  return <Swiper 
+  return (
+  <Swiper 
   spaceBetween={10}
   pagination={{
     clickable:true,
   }}
-  modules={[
-    Pagination
-  ]}
-  className='h-[240px] sm:h-[340px] lg:mt-40'
+  modules={[Pagination]}
+  className='h-[280px] sm:h-[480px] mt-20 '
   >
-    {workSlides.slides.map((slide,index)=>{
+    {workSlider.slides.map((slides,index)=>{
         return(
         <SwiperSlide key={index}>
-          <div className='grid grid-col-2 grid-row-2 gap-4 '>
-            {slide.images.map((image,index)=>{
+          <div className='grid grid-cols-2 grid-row-2 gap-4 '>
+            {slides.images.map((image,index)=>{
               return (
-              <div className='relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index }>
+               <div className='relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index }>
                 <div className='flex items-center justify-center relative overflow-hidden group'>
                   {/* imaeg */}
-                   <Image src={image.path} width={100} height={50} alt=""/>
+                   <Image src={image.path} width={500} height={300} alt=" "/>
                    {/* overly gradient */}
                    <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#eB3Bcc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700' ></div>
                    {/* title */}
@@ -105,7 +104,8 @@ import Image from 'next/image';
         )
       })
     }
-    </Swiper>;
+    </Swiper>
+  ) 
 };
 
 export default WorkSlider;
