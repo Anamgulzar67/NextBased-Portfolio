@@ -7,8 +7,28 @@ import {motion} from 'framer-motion'
 
 //variants
 import {fadeIn} from '../../variants'
+// emailjs
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      e.target,
+      'YOUR_USER_ID'
+    )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+    // Clear the form after sending the email
+    e.target.reset();
+  };
   return (
   <div className='h-full bg-primary/30'>
   <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -25,6 +45,7 @@ const Contact = () => {
       </motion.h2>
       {/* form */}
       <motion.form
+      onSubmit={sendEmail}
       variants={fadeIn('left',0.4 )}
       initial='hidden'
       animate='show'
