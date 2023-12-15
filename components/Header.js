@@ -15,7 +15,7 @@ const Header = () => {
             
             className="p-0"
             src={'/o2.png'} 
-            width={200} 
+            width={150} 
             height={45} 
             alt='' 
             priority={true}
