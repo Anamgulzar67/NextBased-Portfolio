@@ -1,5 +1,8 @@
 //components
-import Circles from '/components/Circles'
+// import Circles from '/components/Circles'
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
  //icons
 import {BsArrowRight} from 'react-icons/bs'
 //framer
@@ -7,28 +10,26 @@ import {motion} from 'framer-motion'
 
 //variants
 import {fadeIn} from '../../variants'
-// emailjs
-import emailjs from 'emailjs-com';
+// import { Resend } from 'resend'
 
-const Contact = () => {
+  const Contact = () => {
+  
+    const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      e.target,
-      'YOUR_USER_ID'
-    )
+    emailjs.sendForm('service_fdrgmh9', 'template_w147r1i', form.current, 'nRFtYhj82eSX4xq3L')
       .then((result) => {
-        console.log(result.text);
+          console.log(result.text);
+          console.log("messgae sent")
       }, (error) => {
-        console.log(error.text);
+          console.log(error.text);
       });
+    
+    
 
-    // Clear the form after sending the email
-    e.target.reset();
-  };
+  }
   return (
   <div className='h-full bg-primary/30'>
   <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -45,7 +46,9 @@ const Contact = () => {
       </motion.h2>
       {/* form */}
       <motion.form
-      onSubmit={sendEmail}
+      ref={form}
+       onSubmit={sendEmail}
+      
       variants={fadeIn('left',0.4 )}
       initial='hidden'
       animate='show'
@@ -53,12 +56,12 @@ const Contact = () => {
       className='flex-1 flex flex-col gap-6 w-full mx-auto ' >
         {/* group */}
         <div className='flex gap-x-6 w-full'>
-          <input type="text" placeholder='Name' className='input' />
-          <input type="text" placeholder='email' className='input' />
+          <input type="text" placeholder='Name' className='input' name="to_name"/>
+          <input type="text" placeholder='email' className='input' name="from_name" />
         </div>
           <input type="text" placeholder='subject' className='input' />
-           <textarea placeholder='message' className='textarea'></textarea>
-           <button className='btn rounded-full border border-white/50 max-w-[170px]
+           <textarea placeholder='message' name='message' className='textarea'></textarea>
+           <button  className='btn rounded-full border border-white/50 max-w-[170px]
            px-8 transition-all duratopn-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
             <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>talk</span>
             <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[25 px]'/>
