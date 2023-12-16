@@ -22,7 +22,7 @@ import {fadeIn} from '../../variants'
     emailjs.sendForm('service_fdrgmh9', 'template_w147r1i', form.current, 'nRFtYhj82eSX4xq3L')
       .then((result) => {
           console.log(result.text);
-          console.log("messgae sent")
+          alert("messgae sent")
       }, (error) => {
           console.log(error.text);
       });
