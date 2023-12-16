@@ -41,7 +41,7 @@ import {fadeIn} from '../../variants'
       initial='hidden'
       animate='show'
       exit='hidden'
-      className='h2 text-center mt-96 xl:mt-28 mb-12'>
+      className='h2 text-center mt-20 xl:mt-20 mb-2 lg:mb-10'>
         Reach <span className='text-accent'>Out</span> 
       </motion.h2>
       {/* form */}
@@ -60,7 +60,7 @@ import {fadeIn} from '../../variants'
           <input type="text" placeholder='email' className='input' name="from_name" />
         </div>
           <input type="text" placeholder='subject' className='input' />
-           <textarea placeholder='message' name='message' className='textarea'></textarea>
+           <textarea  placeholder='message' name='message' className='textarea'></textarea>
            <button  className='btn rounded-full border border-white/50 max-w-[170px]
            px-8 transition-all duratopn-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
             <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>talk</span>

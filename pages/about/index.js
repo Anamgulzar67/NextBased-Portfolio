@@ -181,14 +181,14 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[450px]"
+        className="hidden xl:flex absolute bottom-0 -left-[500px]"
       >
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col md:gap-0  items-center xl:flex-row gap-x-6 ">
+      <div className="container mx-auto h-full flex flex-col md:pt-0  items-center xl:flex-row  ">
         {/* texxt */}
-        <div className=" flex-1 flex flex-col justify-center mt-48 lg:mt-20">
+        <div className=" flex-1 flex flex-col justify-center lg:mt-20">
           <motion.h2
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -216,7 +216,7 @@ const About = () => {
           exit="hidden"
          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div
-            className="flex mt-10 md:mt-10 lg:mt-28 gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4"
+            className="flex mt-4  lg:mt-28 gap-x-4 xl:gap-x-4 mx-auto xl:mx-0 mb-4"
           >
             {aboutData.map((item, itemIndex) => {
               return (

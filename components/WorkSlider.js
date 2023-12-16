@@ -77,12 +77,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px] mt-20 "
+      className="h-[280px] sm:h-[480px] mt-0 lg:mt-20 "
     >
       {workSlider.slides.map((slides, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-row-2 gap-4 ">
+            <div className="grid grid-cols-2 grid-row-2 h-40 lg:h-80  mt-0 lg:mt-14 gap-4 ">
               {slides.images.map((image, index) => {
                 return (
                   <div
@@ -107,7 +107,7 @@ const WorkSlider = () => {
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 translate-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* title1 */}
-                          <div className="delay-100 text-lg">{image.title}</div>
+                          <div className="delay-100 ">{image.title}</div>
                           {/* title2 */}
 
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">

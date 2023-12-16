@@ -11,7 +11,7 @@ import WorkSlider from "../../components/WorkSlider";
 const Work = () => {
   return (
 
-    <div className="h-full bg-primary/30 py-36 items-center">
+    <div className="h-full bg-primary/30 py-8 items-center">
     <Circles/>
     <div className="container mx-auto">
       <div className="flex flex-col xl:flex-row gap-x-8">
@@ -22,7 +22,7 @@ const Work = () => {
           initial='hidden'
           animate='show'
           exit='hidden' 
-          className="h2 mt-40 md:mt-40 xl:mt-36">My Work 
+          className="h2 mt-32 md:mt-20 xl:mt-36">My Work 
           </motion.h2>
           <motion.p 
           variants={fadeIn('up', 0.4)}
@@ -38,7 +38,7 @@ const Work = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='w-full xl:max-w-[65%] '>
+        className='w-full  xl:max-w-[56%] '>
         <WorkSlider/>
 
         </motion.div>
