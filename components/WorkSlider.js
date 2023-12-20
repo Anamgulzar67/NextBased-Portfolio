@@ -9,7 +9,13 @@ const workSlider = {
         {
           title: "Portfolio",
           path: "/thumb1.jpg",
-          link:'next-based-portfolio-xelz-anamgulzar67.vercel.app'
+          link:'https://next-based-portfolio.vercel.app/'
+        
+        },
+        {
+          title: "Next.js-todo",
+          path: "/thumb1.jpg",
+          link:'https://tuu-duu-app.netlify.app'
         
         },
         {
