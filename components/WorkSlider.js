@@ -12,12 +12,12 @@ const workSlider = {
           link:'https://next-based-portfolio.vercel.app/'
         
         },
-        {
-          title: "Next.js-todo",
-          path: "/thumb1.jpg",
-          link:'https://tuu-duu-app.netlify.app'
+        // {
+        //   title: "Next.js-todo",
+        //   path: "/thumb1.jpg",
+        //   link:'https://tuu-duu-app.netlify.app'
         
-        },
+        // },
         {
           title: "Expense tracker",
           path: "/thumb2.jpg",
@@ -28,7 +28,11 @@ const workSlider = {
           path: "/thumb3.jpg",
           link:'https://dize-gamee.netlify.app/'
         },
-        
+        {
+          title: "GitHub API",
+          path: "/thumb4.jpg",
+          link:'https://githubb-api.netlify.app/'
+        },
       ],
     },
     {
@@ -39,11 +43,6 @@ const workSlider = {
           link:'https://next-session-8-oct-one.vercel.app/'
         },
         {
-          title: "GitHub API",
-          path: "/thumb4.jpg",
-          link:'https://githubb-api.netlify.app/'
-        },
-        {
           title: "title",
           path: "/thumb1.jpg",
         },
@@ -51,7 +50,10 @@ const workSlider = {
           title: "title",
           path: "/thumb2.jpg",
         },
-        
+        {
+          title: "title",
+          path: "/thumb3.jpg",
+        },
       ],
     },
   ],
