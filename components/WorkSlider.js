@@ -12,12 +12,7 @@ const workSlider = {
           link:'https://next-based-portfolio.vercel.app/'
         
         },
-        // {
-        //   title: "Next.js-todo",
-        //   path: "/thumb1.jpg",
-        //   link:'https://tuu-duu-app.netlify.app'
         
-        // },
         {
           title: "Expense tracker",
           path: "/thumb2.jpg",
@@ -43,9 +38,11 @@ const workSlider = {
           link:'https://next-session-8-oct-one.vercel.app/'
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
-        },
+            title: "Next.js-todo",
+            path: "/thumb1.jpg",
+            link:'https://tuu-duu-app.netlify.app'
+          
+          },
         {
           title: "title",
           path: "/thumb2.jpg",
