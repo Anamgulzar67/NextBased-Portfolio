@@ -28,11 +28,7 @@ const workSlider = {
           path: "/thumb3.jpg",
           link:'https://dize-gamee.netlify.app/'
         },
-        {
-          title: "GitHub API",
-          path: "/thumb4.jpg",
-          link:'https://githubb-api.netlify.app/'
-        },
+        
       ],
     },
     {
@@ -41,6 +37,11 @@ const workSlider = {
           title: "Next Routings",
           path: "/thumb4.jpg",
           link:'https://next-session-8-oct-one.vercel.app/'
+        },
+        {
+          title: "GitHub API",
+          path: "/thumb4.jpg",
+          link:'https://githubb-api.netlify.app/'
         },
         {
           title: "title",
