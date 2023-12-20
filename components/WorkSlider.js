@@ -50,10 +50,7 @@ const workSlider = {
           title: "title",
           path: "/thumb2.jpg",
         },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-        },
+        
       ],
     },
   ],
