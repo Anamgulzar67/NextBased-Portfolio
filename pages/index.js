@@ -16,7 +16,7 @@ const Home = () => {
     <div className="bg-primary/6 h-full ">
       {/* {text} */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center pt-28 xl:pt-40 xl:text-left h-full  container mx-auto ">
+        <div className="text-center flex flex-col justify-center pt-40 xl:pt-40 xl:text-left h-full  container mx-auto ">
           {/* {title } */}
           <motion.h1 
            variants={fadeIn('down',0.2) }
@@ -33,7 +33,7 @@ const Home = () => {
            initial='hidden'
            animate='show'
            exit='hidden'
-            className="max-w-sm  xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-10 ">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-10 ">
            Welcome to my web development portfolio, where innovation meets functionality, and creativity converges with code. With a passion for crafting digital experiences, I specialize in turning ideas into responsive and dynamic websites. I am dedicated to creating visually stunning and user-friendly websites that leave a lasting impression.
           </motion.p>
           {/* {btn } */}
