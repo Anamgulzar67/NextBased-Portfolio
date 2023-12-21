@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Avatar = () => {
-  return <div className="absolute hidden xl:flex xl:max-w-none ">
+  return <div className=" xl:flex xl:max-w-none ">
     <Image 
     src={'/pp.webp'} 
     width={535} 

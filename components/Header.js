@@ -7,7 +7,7 @@ import Socials from '../components/Socials'
 
 const Header = () => {
   return( 
-    <header className="absolute z-30 w-full h-30  flex items-center px-16 xl:px-0 xl:h-[90px] ">
+    <header className="absolute z-30 w-full h-20  flex items-center px-16 xl:px-0 xl:h-[90px] ">
       
       <div className="container mx-auto ">
         <div className="flex flex-col mt-4 lg:flex-row justify-between items-center gap-y-0 my-2 ">

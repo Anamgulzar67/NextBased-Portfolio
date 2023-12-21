@@ -72,22 +72,22 @@ const aboutData = [
     info: [
      
       {
-        title: "I had participated in Federal inter-school Qirat competition and got 3rd position. -Multan-regiuon-Multan",
+        title: " 3rd position Qirat ,Multan-regiuon-Multan",
         stage: "2013",
       },{
-        title: "I had participated in debate competition and got 2nd position. -Multan-regiuon-Multan",
+        title: "2nd position in debates -Multan-regiuon-Multan",
         stage: "2013",
       },{
-        title: "I had participated in art compition organized by media society and got 1st position. -Media Society ,UO",
+        title: "First position in sketching -Media Society ,UO",
         stage: "2019",
       },{
-        title: "I got prize on efficient working of writing newspaper of Media society. -Media Society ,UO",
+        title: "Efficient working of writing columns in newspaper -Media Society ,UO",
         stage: "2019",
       },{
-        title: "I had participated in Inter-school debate competition and got 2nd position. -FG School,Okara Cantt",
+        title: "2nd Inter-school debates,FG School,Okara Cantt",
         stage: "2013",
       },{
-        title: "I was an active member of (EWS) Environmental Watch Society in university of okara,Renala campus -EWS ,UO",
+        title: "Active member of Environmental Watch Society -EWS ,UO",
         stage: "2018...2019",
       },
     ],
@@ -164,7 +164,7 @@ const aboutData = [
 
 //components
 import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
+// import Circles from "../../components/Circles";
 
 //framer motion
 import { motion } from "framer-motion";
@@ -173,8 +173,8 @@ import { fadeIn } from "../../variants";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Circles />
+    <div className="h-full bg-primary/30 py-28 text-center xl:text-left">
+      {/* <Circles /> */}
       {/* {avatar img } */}
       <motion.div
         variants={fadeIn("right ,0.2")}
@@ -186,7 +186,7 @@ const About = () => {
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col mt-4 md:pt-0  items-center xl:flex-row  ">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row  ">
         {/* texxt */}
         <div className=" flex-1 flex flex-col justify-center lg:mt-20">
           <motion.h2
@@ -194,7 +194,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="text-3xl lg:h2 "
           >
             Intro<span className="text-accent ">duction</span>
           </motion.h2>
@@ -203,9 +203,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto md:mb-0 xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="lg:max-w-[500px] lg:mx-auto mt-4 md:mb-0 xl:mx-0  xl:mb-12 xl:px-0"
           >
-           From front-end design to back-end development, my goal is to deliver seamless, intuitive, and performance-driven web solutions. Explore my projects to witness the intersection of design aesthetics and cutting-edge technology, showcasing my commitment to pushing the boundaries of web development. 
+           From front-end design to back-end development, my goal is to deliver seamless, intuitive, and performance-driven web solutions.Lock's see my introduction in detail
           </motion.p>
         </div>
         {/* info */}
@@ -214,9 +214,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-         className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+         className="flex flex-col w-full xl:max-w-[60%] h-[480px]">
           <div
-            className="flex mt-4  lg:mt-28 gap-x-4 xl:gap-x-4 mx-auto xl:mx-0 mb-4"
+            className="flex mt-8 lg:mt-24 gap-x-4 xl:gap-x-4 mx-auto xl:mx-0 mb-4"
           >
             {aboutData.map((item, itemIndex) => {
               return (
@@ -246,21 +246,21 @@ const About = () => {
                   // animate="show"
                   // exit="hidden"
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/50"
-                >
+                  className=" flex md:flex-row max-w-max gap-x-2 items-center text-white/50"
+                  >
                   {/* {title } */}
                   <div
                   //  variants={fadeIn("left", 0.4)}
                   //  initial="hidden"
                   //  animate="show"
                   //  exit="hidden"
-                  className="font-light mb-2 md:mb-0">{item.title}</div>
+                  className="font-light mb-2  md:mb-0">{item.title}</div>
                   <div className="hidden md:flex ">--</div>
                   <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
+                  <div className="flex flex-row  gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return (<div key={itemIndex} className="text-2xl text-white">{icon}</div>)   
+                      return (<div key={itemIndex} className="text-xl lg:text-2xl text-white">{icon}</div>)   
                     })}
                   </div>
                 </div>

@@ -41,7 +41,7 @@ import {fadeIn} from '../../variants'
       initial='hidden'
       animate='show'
       exit='hidden'
-      className='h2 text-center mt-20 xl:mt-20 mb-2 lg:mb-10'>
+      className='h2 text-center mt-4 xl:mt-20 mb-2 lg:mb-10'>
         Reach <span className='text-accent'>Out</span> 
       </motion.h2>
       {/* form */}
