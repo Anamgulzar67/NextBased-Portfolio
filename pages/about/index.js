@@ -32,11 +32,11 @@ const aboutData = [
           <FaCss3  key={"FaCss3"}/>,
           <FaJs key={"FaJs"} />,
           <FaReact key={"FaReact"}/>,
-          <SiNextdotjs key={"SiNextdotjs"}/>,
+          // <SiNextdotjs key={"SiNextdotjs"}/>,
           <SiFramer key={"SiFramer"} />,
           <FaNodeJs  key={"FaNodeJs"}/>,
           <FaPython  key={"FaPython"}/>,
-          <FaBootstrap  key={"FaBootstrap"}/>,
+          // <FaBootstrap  key={"FaBootstrap"}/>,
           <FaGithub  key={"FaGithub"}/>,
         ],
         
@@ -72,19 +72,19 @@ const aboutData = [
     info: [
      
       {
-        title: " 3rd position Qirat ,Multan-regiuon-Multan",
+        title: " 3rd position Qirat ,Multan-regiuon",
         stage: "2013",
       },{
-        title: "2nd position in debates -Multan-regiuon-Multan",
+        title: "2nd position in debates -Multan-regiuon",
         stage: "2013",
       },{
         title: "First position in sketching -Media Society ,UO",
         stage: "2019",
       },{
-        title: "Efficient working of writing columns in newspaper -Media Society ,UO",
+        title: "Newspaper work-Media Society,UO",
         stage: "2019",
       },{
-        title: "2nd Inter-school debates,FG School,Okara Cantt",
+        title: "2nd prize in debates,FG School,Okara Cantt",
         stage: "2013",
       },{
         title: "Active member of Environmental Watch Society -EWS ,UO",
@@ -188,13 +188,13 @@ const About = () => {
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row  ">
         {/* texxt */}
-        <div className=" flex-1 flex flex-col justify-center lg:mt-20">
+        <div className=" flex-1 flex flex-col justify-center lg:mt-11">
           <motion.h2
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-3xl lg:h2 "
+            className="text-2xl lg:h2 mb-4 "
           >
             Intro<span className="text-accent ">duction</span>
           </motion.h2>
@@ -203,7 +203,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="lg:max-w-[500px] lg:mx-auto mt-4 md:mb-0 xl:mx-0  xl:mb-12 xl:px-0"
+            className="lg:max-w-[500px] lg:mx-auto md:mb-0 xl:mx-0  xl:mb-12 xl:px-0"
           >
            From front-end design to back-end development,my goal is to deliver seamless, intuitive,and performance-driven web solutions.Let see my introduction in detail
           </motion.p>
@@ -214,17 +214,13 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-         className="flex flex-col w-full xl:max-w-[60%] h-[480px]">
+         className="flex flex-col w-full xl:max-w-[50%] h-[480px]">
           <div
-            className="flex mt-8 lg:mt-24 gap-x-4 xl:gap-x-4 mx-auto xl:mx-0 mb-4"
+            className="flex lg:mt-24 gap-x-4 mt-6 xl:gap-x-4 mx-auto xl:mx-0 mb-4"
           >
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                // variants={fadeIn("left", 0.4)}
-                // initial="hidden"
-                // animate="show"
-                // exit="hidden"
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
@@ -234,27 +230,21 @@ const About = () => {
                 >
                   {item.title}
                 </div>
-              );
+              )
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className=" xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  // variants={fadeIn("left", 0.4)}
-                  // initial="hidden"
-                  // animate="show"
-                  // exit="hidden"
+                  
                   key={itemIndex}
                   className=" flex md:flex-row max-w-max gap-x-2 items-center text-white/50"
                   >
                   {/* {title } */}
                   <div
-                  //  variants={fadeIn("left", 0.4)}
-                  //  initial="hidden"
-                  //  animate="show"
-                  //  exit="hidden"
-                  className="font-light mb-2  md:mb-0">{item.title}</div>
+               
+                  className="font-light md:mb-0">{item.title}</div>
                   <div className="hidden md:flex ">--</div>
                   <div>{item.stage}</div>
                   <div className="flex flex-row  gap-x-4">

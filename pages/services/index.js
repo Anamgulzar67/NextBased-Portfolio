@@ -22,7 +22,7 @@ const Services = () => {
           initial='hidden'
           animate='show'
           exit='hidden' 
-          className="h2 mt-28 md:mt-40 xl:mt-36">My Services 
+          className="h2 mt-28 md:mt-40 xl:mt-48">My Services 
           </motion.h2>
           <motion.p 
           variants={fadeIn('up', 0.4)}
