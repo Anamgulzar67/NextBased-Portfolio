@@ -205,7 +205,7 @@ const About = () => {
             exit="hidden"
             className="lg:max-w-[500px] lg:mx-auto mt-4 md:mb-0 xl:mx-0  xl:mb-12 xl:px-0"
           >
-           From front-end design to back-end development,my goal is to deliver seamless, intuitive, and performance-driven web solutions.Lock's see my introduction in detail
+           From front-end design to back-end development,my goal is to deliver seamless, intuitive,and performance-driven web solutions.Let see my introduction in detail
           </motion.p>
         </div>
         {/* info */}
