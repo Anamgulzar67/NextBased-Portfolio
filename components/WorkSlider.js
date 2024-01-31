@@ -44,8 +44,9 @@ const workSlider = {
           
           },
         {
-          title: "title",
+          title: "Redux-app",
           path: "/thumb2.jpg",
+          link:'https://redux-1st-app.netlify.app'
         },
         {
           title: "title",
