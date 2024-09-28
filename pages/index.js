@@ -4,6 +4,7 @@
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import Textanimation from "../components/Textanimation";
 
 //framer motion
 import { motion } from "framer-motion";
@@ -25,7 +26,7 @@ const Home = () => {
            exit='hidden'
           className="text-3xl xl:h2 ">
             Anam Gulzar <br />
-            I am a <span className="text-accent ">Web Developer</span>
+            I am a <Textanimation />
           </motion.h1>
           {/* {subtitle } */}
           <motion.p 
