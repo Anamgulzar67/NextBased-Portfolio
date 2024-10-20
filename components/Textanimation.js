@@ -23,7 +23,7 @@ const TypewriterEffect = () => {
                     setIsDeleting(true);
                 }
             }
-        }, isDeleting ? 50 : 50); // Speed for deleting vs typing
+        }, isDeleting ? 200 : 500); // Speed for deleting vs typing
 
         return () => clearTimeout(timeout);
     }, [index, isDeleting, text]);
